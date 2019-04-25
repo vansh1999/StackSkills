@@ -1,0 +1,506 @@
+body{
+  /* background-image: linear-gradient(to right top, #3a3e43, #495559, #5a6d6c, #73857a, #959b87); */
+  background-image: linear-gradient(to right top, #6d747c, #768488, #839492, #96a29a, #adb0a3);
+}
+
+#page1{
+    background-color:rgb(182, 176, 176);
+    background: url(/home/vansh/Desktop/web_projects/stackskills/ki9.jpg); 
+    background-size: 100% 100%;
+    height: 1000px;
+    
+     /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  */
+  
+  background-repeat: no-repeat;
+    background-position: center; 
+    /* width:  100%;
+    height: 100%; */
+  
+}
+
+#headLogo{
+  
+  float : left;
+  display: inline-block;
+margin-top: -50px;
+margin-left: -50px;
+height: 118px;
+width: 152px;
+}
+
+
+#navbar ul {
+    list-style-type: none;
+    
+    margin: 0px;
+    margin-top: 0px;
+    
+    
+    overflow: hidden;
+    background-color : rgba(0, 0, 0, 0.5);
+  }
+  
+  #navbar li {
+    float: right;
+    font-size: 30px;
+    font-family: 'Lekton', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    
+  }
+  
+  #navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  #navbar li a:hover {
+    background-color: #111;
+    border: 3px solid  white;
+  }
+
+
+/* nav bar to be sticky */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+  #head2{
+    color: white;
+    font-family: 'Lekton', Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+  
+  } 
+
+  #insidehead2{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lekton', Helvetica, Arial, sans-serif;
+    
+    
+  }
+
+
+  #getstartbutton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ddf12c;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    opacity: 0.8;
+    width: 500px;
+    height: 100px;
+  }
+  
+  
+  #getstartbutton:hover{
+       opacity:1;
+  }
+  
+  
+  #getstartbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #getstartbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #getstartbutton:hover span {
+    padding-right: 60px;
+  }
+  
+  #getstartbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
+
+
+  img .blur{
+    display: block; 
+    max-width: 100%;  /* Responsive */ 
+  } 
+  #page2 { 
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px; /* Equal to our image */
+   }
+  
+   .column1 {
+    position: absolute; /* Overlap the previous div */
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 630px;
+    background-color: rgba(31, 30, 30, 0.8); /*transparent background;*/
+    float: left;
+    padding-left: 30px;
+    padding-top: 0px;
+    font-family: 'Lekton', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+    /* font-weight: bold; */
+    /* background-color: white; */
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-right:70px; 
+    /* opacity: 0.8; */
+  } 
+
+  .column2 {
+    position: absolute; /* Overlap the previous div */
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 600px;
+    /* background-color: rgba(0,0,0,0.4); transparent background */
+    float: right;
+     /* padding-left: 50px; */
+    /* margin-right: 0px; 
+    padding-top: 50px;
+    padding-left: 50px; */
+    /* align-content: center;
+    align-items: center; */
+    /* margin-right: -180px; */
+  } 
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1535px) {
+    .column1 {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1535px) {
+    .column2 {
+      width: 100%;
+      margin-top: 700px;
+      margin-left: 40px;
+    }
+  }
+
+
+
+  .blur {
+    -webkit-filter: blur(12px);
+    filter: blur(12px); 
+    width: 100%;
+    height: 900px;
+  } 
+  
+  #already{
+    font-family: 'Lekton', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 60px;
+  }
+
+  #loginButton{
+
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ddf12c;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 35px;
+    
+    /* opacity: 0.8; */
+    /* width: 500px; */
+    height: 60px;
+    /* box-align: center;
+    display: flex;
+  align-items: center;
+  justify-content: center; */
+   margin-left: 130px;
+  
+  
+
+  }
+
+
+
+#registerHere{
+  font-family: 'Lekton', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 70px;
+}
+
+
+
+label {
+  
+  font-size: 20px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+input[type=text], select, textarea {
+  width: 50%; 
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-size: 18px;
+}
+
+#country{
+  width: 100px;
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  font-size: 18px;
+
+}
+
+input[type=number], select, textarea {
+  width: 38%; 
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-size: 18px;
+
+
+}
+
+
+input[type=password], select, textarea {
+  width: 50% ;
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-size: 18px;
+
+
+}
+
+
+  #enrollNow{
+   
+
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ddf12c;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 35px;
+    
+    /* opacity: 0.8; */
+    /* width: 500px; */
+    height: 60px;
+    margin-left: 130px;
+   
+  }
+
+#agreeterms{
+  font-size: 28px;
+}
+
+#agreecol{
+  color:rgb(4, 4, 53);
+}
+
+/* 3th section */
+
+
+#whyHead{
+  
+  height: 650px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+#whystack{
+  color: black;
+  font-family: 'Lekton', Helvetica, Arial, sans-serif ;
+  font-size: 70px  ;
+  font-weight: bold ;
+  text-align : center;
+  
+}
+
+#ldoing{
+  float: left;
+  
+  margin-left: 250px;
+  margin-top: -70px;
+
+  padding: 60px;
+  font-family: 'Lekton', Helvetica, Arial, sans-serif ;
+  font-weight: bold;
+  font-size: 22px;
+  
+  
+  
+}
+
+#lmentors{
+  float : left;
+  margin-top: -70px;
+  padding: 60px;
+  font-family: 'Lekton', Helvetica, Arial, sans-serif ;
+  font-weight: bold;
+  font-size: 22px;
+  
+}
+
+#lother{
+  float: left;
+  margin-top: -70px;
+  padding: 60px;
+  font-family: 'Lekton', Helvetica, Arial, sans-serif ;
+  font-weight: bold;
+  font-size: 22px;
+  
+}
+
+#sharp{
+  background-image: linear-gradient(to right top, #3a3e43, #495559, #5a6d6c, #73857a, #959b87);
+  
+  height: 10px;
+}
+
+h4.doing{
+  font-size: 40px;
+  color: black;
+  font-family: 'Lekton', Helvetica, Arial, sans-serif ;
+}
+
+h4.mentors{
+  font-size: 40px;
+  color: black;
+  font-family: 'Lekton', Helvetica, Arial, sans-serif ;
+}
+
+h4.others{
+  font-size: 40px;
+  color: black;
+  font-family: 'Lekton', Helvetica, Arial, sans-serif ;
+}
+
+
+
+
+#totalfooter{
+  
+  background-image: linear-gradient(to right top, #323436, #282c2d, #1f2424, #181c19, #13140e);
+  height: 220px;
+
+
+}
+
+.company li{
+  
+  font-size: 20px;
+  color: white;
+  width: 20%;
+  float:left;
+  padding-top: 20px;
+  
+  
+  
+}
+
+
+.Community li{
+  font-size: 20px;
+  color: white;
+  width: 20%;
+  float:left;
+  padding-top: 20px;
+  
+  
+}
+
+
+.Teaching li{
+  font-size: 20px;
+  color: white;
+  width: 20%;
+  float:left;
+  padding-top: 20px;
+  
+  
+  
+}
+
+#last{
+  font-size: 20px;
+  color: white;
+  /* float:left; */
+  /* align-content: center;
+  align-items: center; */
+  text-align: center;
+  /* margin-left: 400px; */
+  
+}
+
+
+
+
+
+
